@@ -36,7 +36,39 @@
 // - au clique : on créé un tableau où on place les stadiers au 4 coins, lorsque l'utilisateur (qui serait donc
 //   considéré comme le supporter) clique sur une case de stadier il y a une vérif de la place --- idée bof
 //
+// Le stadier doit indiquer la direction au supporter
+// Je dois avoir un 'numero_place' à comparer avec la 'position_stadier'
+// position_stadier st1 : A2, A3, B1, B2, B3 = ok
+//                        C1, D1, C2, D2, C3, D3 = droite
 
-let position_stadier;
-let numero_place;
+//let grid = {
+    // Je créée un tableau pour positionner les stadiers
+    // Je place les stadiers à chaque coins du rectangle (stade)
+    // Mes stadiers sont représentés par des petits 'st1', 'st2', 'st3', 'st4'
+ //   cells : [
+   //     ['st1', '', '', 'st2'],
+    //    ['', '', '', ''],
+      //  ['', '', '', ''],
+        //['', '', '', ''],
+        //['', '', '', ''],
+        //['st3', '', '', 'st4']
+    //],
+
+let position_stadier = "A1";
+let numero_place = "C2";
+
+function stadier(A1) {
+    // il doit vérifier la place
+    // et dire gauche, droite ou ok
+    let result;
+    if (A1 < 0) {
+        result = "ok";
+    } else if (A1) {
+        result = "droite";
+    } else if (A1) {
+        result = "gauche";
+    }
+    return result;
+    console.log(result);
+}
 
