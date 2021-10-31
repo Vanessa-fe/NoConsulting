@@ -59,16 +59,19 @@
 // Sinon une lettre aléatoire + un chiffre aléatoire et faire une concaténation
 // Ou récupérer aléatoirement les axes X et Y du tableau en excluant les cellules des stadiers
 
+
+
+// Test de fonction pour générer des numéro de place aléatoire pour les supporter
+// Je me suis inspiré du code d'un exercice de ma formation où on voulait générer des éléments aléatoires
 /*function makeId(length) {
-    let result           = '';
-    let characters = 'ABCD123456';
+    let result = '';
+    let characters = 'ABCD123456'; // j'indique les caractères que je souhaite
     let charactersLength = characters.length;
     for (let i = 0; i < length; i++ ) {
         result += characters.charAt(Math.floor(Math.random() * charactersLength));
     }
     return result;
 }
-
 console.log(makeId(2));*/
 
 // Cette fonction fonctionne mais peut me générer 2 chiffres ou 2 lettres hors je veux 1 lettre et 1 chiffre
@@ -103,8 +106,8 @@ function makeNumber(length) {
 // Bon ça fonctionne aussi ! Mais c'est dans une fenêtre, faut trouver autre chose
 
  let numero_place = (makeLetter(1) + makeNumber(1));
+// Fonctionne pas (forcément si tu fais pas console.log tu vas pas aller loin... ^^
 // console.log(numero_place);
- // Fonctionne pas (forcément si tu fais pas console.log tu vas pas aller loin... ^^
 // FONCTIONNE !!
 
 // Bon maintenant qu'on a la place de généré le stadier va pouvoir guider
@@ -151,7 +154,7 @@ function oneDirection() {
         result = "gauche";
     }*/
     return result;
-    console.log(result);
+    //console.log(result);
 }
 console.log(oneDirection);
 oneDirection();
