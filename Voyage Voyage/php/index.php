@@ -10,7 +10,14 @@
 $tps_base = 3;
 $prix_base = 10;
 // faire une variable pour indiquer les prix et temps client $tps_client $prix_client
+// Proposer une ville supplémentaire si le client met un budget en dessous de 10€
+// Proposer 2 villes supplémentaire si le client met un temps maximum supérieur à 3h
 
-// if ($prix_base > $prix_client)
-// else if ($tps_base > $tps_client)
+function proposition ($prix_client, $tps_client) {
+       // if ($prix_client < $prix_base)
+       //return
+       // else if ($tps_base > $tps_client)
+}
+
+
 

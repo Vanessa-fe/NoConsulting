@@ -1,0 +1,10 @@
+header {
+    border: aqua 2px solid;
+    text-align: center;
+    margin-bottom: 2rem;
+}
+
+.formulaire {
+    border: brown 2px solid;
+    margin: 0 2rem;
+}
